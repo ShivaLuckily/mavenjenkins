@@ -31,6 +31,7 @@ public class UITest
 		}
 		driver.manage().window().maximize();
 		driver.get("https://opensource-demo.orangehrmlive.com/");
+		System.out.println("++++++++++++++++++++"+"Chrome Browser launched");
 		Assert.assertTrue(driver.getTitle().contains("Orange"), "Title does not match");
 		driver.quit();
 	}
